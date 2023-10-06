@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "firedantic-mixin"
+version = "0.1.0"
+description = "Quick mixin to provide basic features to firedantic"
+authors = ["patrick o'leary <pjaol@pjaol.com>"]
+license = "CC-BY-4.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+firedantic = "^0.4.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+filterwarnings = [ "ignore::DeprecationWarning"]
+addopts = "--capture=no"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
