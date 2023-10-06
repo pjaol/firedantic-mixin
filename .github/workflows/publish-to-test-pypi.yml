@@ -3,13 +3,13 @@ name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
 on: push
 
 jobs:
-    publish-to-testpypi:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Build and publish to pypi
-            uses: JRubics/poetry-publish@v1.17
-            with:
-                pypi_token: ${{ secrets.TEST_PYPI_TOKEN }}
-                repository_name: "firedantic-mixin"
-                repository_url: "https://test.pypi.org/p/"
+  publish-to-testpypi:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build and publish to pypi
+      uses: JRubics/poetry-publish@v1.17
+      with:
+        pypi_token: ${{ secrets.TEST_PYPI_TOKEN }}
+        repository_name: "firedantic-mixin"
+        repository_url: "https://test.pypi.org/p/"
