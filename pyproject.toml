@@ -5,6 +5,7 @@ description = "Quick mixin to provide basic features to firedantic"
 authors = ["patrick o'leary <pjaol@pjaol.com>"]
 license = "CC-BY-4.0"
 readme = "README.md"
+packages = [{include = "firedantic_mixin"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

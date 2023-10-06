@@ -1,4 +1,4 @@
-from firedantic_monkey.mixin import FiredanticMonkey
+from firedantic_mixin.mixin import FiredanticMonkey
 import pytest
 from unittest.mock import Mock
 

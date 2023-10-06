@@ -35,7 +35,7 @@ Simply swap the super class of firedantic.Model for FiredanticMonkey
 </td><td>
 
 ```python
-from firedantic_monkey.mixin import FiredanticMonkey
+from firedantic_mixin.mixin import FiredanticMonkey
 
 class Orders(FiredanticMonkey): 
     
