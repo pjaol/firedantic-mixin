@@ -12,4 +12,4 @@ jobs:
       with:
         pypi_token: ${{ secrets.TEST_PYPI_TOKEN }}
         repository_name: "firedantic-mixin"
-        repository_url: "https://test.pypi.org/p/"
+        repository_url: "https://test.pypi.org/legacy/"
