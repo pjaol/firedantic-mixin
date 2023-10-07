@@ -31,16 +31,17 @@ jobs:
     #      path: dist/
       - name: check directory
         run: >-
+            mkdir dist2 && cp dist/* dist2/ ;
             ls -l ;
             ls -l dist ; 
       - name: Sign the dists with Sigstore
         uses: sigstore/gh-action-sigstore-python@v1.2.3
         with:
-          inputs: ./dist/*.tar.gz ./dist/*.whl
+          inputs: ./dist2/*.tar.gz ./dist2/*.whl
       - name: Upload artifact signatures to GitHub Release
         env:
           GITHUB_TOKEN: '${{ github.token }}'
         run: >-
-          gh release upload '${{ github.ref_name }}' dist/** --repo '${{github.repository }}'
+          gh release upload '${{ github.ref_name }}' dist2/** --repo '${{github.repository }}'
 
 
