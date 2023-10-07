@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "firedantic-mixin"
-version = "1.0.5"
+version = "1.0.6"
 description = "Quick mixin to provide basic features to firedantic"
 authors = ["patrick o'leary <pjaol@pjaol.com>"]
 license = "CC-BY-4.0"

@@ -25,10 +25,10 @@ jobs:
         with:
           pypi_token: '${{ secrets.PYPI_TOKEN }}'
           repository_name: firedantic-mixin
-      - name: Download all the dists
-        uses: actions/download-artifact@v3
-        with:
-          path: dist/
+    #  - name: Download all the dists
+    #    uses: actions/download-artifact@v3
+    #    with:
+    #      path: dist/
       - name: check directory
         run: >-
             ls -l ;
