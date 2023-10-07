@@ -35,7 +35,7 @@ jobs:
       - name: Download all the dists
         uses: actions/download-artifact@v3
         with:
-          name: python-package-distributions
+          name: firedantic-mixin
           path: dist/
       - name: Sign the dists with Sigstore
         uses: sigstore/gh-action-sigstore-python@v1.2.3

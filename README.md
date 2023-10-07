@@ -12,6 +12,19 @@ Currently is no select, order_by capabilities, which limits (a function also mis
 Attempts to influence and encourage direction are met with hostility from the maintainer(s).
 This had driven the direction of this solution to use a monkey patch and extension to allow for easy integration. 
 
+### Installation 
+
+Standard install, note - vs _
+
+```
+poetry add firedantic-mixin
+```
+
+Usage
+```python
+from firedantic_mixin.mixin import FiredanticMonkey
+```
+
 ### How to use
 
 Simply swap the super class of firedantic.Model for FiredanticMonkey
