@@ -29,6 +29,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           path: dist/
+      - name: check directory
+        run: >-
+            ls -l ;
+            ls -l dist ; 
       - name: Sign the dists with Sigstore
         uses: sigstore/gh-action-sigstore-python@v1.2.3
         with:
@@ -37,7 +41,6 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ github.token }}'
         run: >-
-          gh release upload '${{ github.ref_name }}' dist/** --repo '${{
-          github.repository }}'
+          gh release upload '${{ github.ref_name }}' dist/** --repo '${{github.repository }}'
 
 
